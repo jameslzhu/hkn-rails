@@ -10,3 +10,10 @@
     <%= f.select :committee, Committeeship::NonExecs %><br />
     <%= f.submit "Add as committee member" %>
 <% end %>
+
+<h2> Remove from committee <%= "#{Property.pretty_semester}" %></h2>
+<%= form_for Committeeship.new, url: { action: "create" } do |f| %>
+    <%= f.label :committee %>:
+    <%= f.select :committee, Committeeship::NonExecs %><br />
+    <%= f.submit "Add as committee member" %>
+<% end %>
