@@ -59,6 +59,7 @@ gem 'will_paginate', '~> 3.1'
 # This is used for course surveys so that professors and TAs/GSIs can log in
 # and see their survey results using their Berkeley login
 gem 'rubycas-client', git: 'https://github.com/rubycas/rubycas-client'
+gem 'rack-cas','~> 0.16.1'
 
 # The OCF hosting includes MySQL, so we use that
 gem 'mysql2', '~> 0.4.0'

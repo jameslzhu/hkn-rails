@@ -69,5 +69,9 @@ module HknRails
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # rack-cas
+    config.rack_cas.server_url = 'https://auth.berkeley.edu/cas/'
+    config.rack_cas.protocol = 'p3'
   end
 end
